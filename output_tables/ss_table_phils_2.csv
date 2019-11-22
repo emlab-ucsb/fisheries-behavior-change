@@ -1,0 +1,18 @@
+Survey,Indicator,GUBATRA,INABANG,IPILBUL,LIBERTA,LOOCBAH,LUBANG,LUBANG_
+CS,Attitude,"295, 295",NA,NA,"100, 100","167, 168",NA,"194, 132"
+CS,Communication,"275, 294",NA,NA,"100, 100","166, 165",NA,"193, 131"
+CS,Knowledge,"293, 295",NA,NA,"100, 100","167, 168",NA,"192, 130"
+SFP,Catch Reporting,"295, 294",NA,NA,"92, 100","165, 166",NA,"194, 132"
+SFP,Licensing,"293, 289",NA,NA,"98, 100","165, 165",NA,"193, 132"
+SFP,Management Participation,"295, 295",NA,NA,"100, 100","167, 169",NA,"194, 132"
+SFP,NTZ Compliance,"290, 290",NA,NA,"100, 99","166, 165",NA,"192, 128"
+SFP,TURF Compliance,"378, 388",NA,NA,"88, 96","140, 162",NA,"158, 127"
+SE,Biomass Inside NTZ,"3, 3; 3, 3",3,"3, 3","3, 3","3, 3","3, 3",NA
+SE,Biomass Outside NTZ,"2, 2; 3, 3",6,"3, 3","3, 3","3, 3","3, 3",NA
+SL,Collective Efficacy,"100, 100; 99, 100",NA,NA,NA,NA,NA,NA
+SL,Food Security,"100, 100; 379, 386",NA,NA,"97, 70; 100, 97","159, 161",NA,"192, 128"
+SL,Livelihood Stability,"100, 100; 376, 390",NA,NA,"67, 71; 100, 100","159, 163",NA,"174, 121"
+SL,Political Trust,"100, 100; 391, 393",NA,NA,"100, 74; 100, 100","167, 165",NA,"188, 127"
+SL,Social Equity,"100, 100; 365, 388",NA,NA,"79, 68; 100, 99","146, 161",NA,"183, 124"
+SL,Social Trust,"100, 100; 354, 367",NA,NA,"52, 74; 98, 99","111, 164",NA,"182, 126"
+SL,Subjective Well-being,"100, 100; 389, 393",NA,NA,"98, 74; 99, 100","166, 164",NA,"193, 127"

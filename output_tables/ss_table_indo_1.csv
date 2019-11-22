@@ -1,0 +1,21 @@
+Survey,Indicator,ANAMBAS,BANDAMP,BUMBANG,BUNAKEN,GILIMAT,KAIMANA,KARIMUN
+CS,Attitude,"50, 49","193, 184","366, 372","38, 38","29, 25","27, 34","20, 54"
+CS,Communication,"50, 47","193, 184","366, 372","38, 38","29, 25","27, 34","20, 54"
+CS,Knowledge,"50, 44","193, 184","365, 372","38, 38","29, 25","27, 34","20, 54"
+SFP,Catch Reporting,"50, 47","193, 184","366, 371","38, 38","29, 25","27, 34",NA
+SFP,Enforcement,"50, 47","193, 184","366, 371","38, 38","29, 25","27, 34",NA
+SFP,Licensing,NA,NA,NA,"38, 38",NA,NA,NA
+SFP,Management Participation,"50, 47","193, 184","366, 372","76, 77","29, 25","27, 33","20, 53"
+SFP,NTZ Compliance,"50, 47","193, 184","366, 371","38, 38","29, 25","27, 34",NA
+SFP,TURF Compliance,"50, 47","193, 184","366, 371","76, 45","29, 25","27, 34","20, 54"
+SE,Biomass Inside NTZ,"3, 3",NA,NA,NA,"1, 1","3, 1","4, 4"
+SE,Biomass Outside NTZ,"5, 4","3, 3",NA,"2, 2","2, 2","7, 4","1, 1"
+SL,Catch Trend 1 Year,"41, 38","172, 173","297, 334","67, 66","14, 8","25, 23","17, 52"
+SL,Catch Trend 5 Years,NA,NA,NA,"20, 22",NA,NA,NA
+SL,Food Security,NA,NA,NA,"38, 39",NA,NA,NA
+SL,Household Assets,NA,NA,NA,"38, 39",NA,NA,NA
+SL,Livelihood Stability,NA,NA,NA,"38, 39",NA,NA,NA
+SL,Political Trust,NA,NA,NA,"38, 39",NA,NA,NA
+SL,Reduced Fishing Costs,"50, 49","193, 184","365, 372","38, 38","29, 25","27, 31",NA
+SL,Social Trust,NA,NA,NA,"38, 39",NA,NA,NA
+SL,Subjective Well-being,NA,NA,NA,"38, 39",NA,NA,NA

@@ -1,0 +1,32 @@
+Survey,Indicator,Representative survey question,Representative responese options
+Community Support,Attitude - Catch Reporting,There benefits of reporting your catch,[ ] True [ ] False [ ] Unsure
+Community Support,Attitude - Enforcement,It important for fishers to report intrusions to the NTZ,"[ ] Strongly agree [ ] Agree [ ] Disagree	[ ] Strongly disagree [ ] No answer"
+Community Support,Attitude - Governance Participation,How easy is it to engage in processes and discussions for the management of the fishery?,[] Easy [] Somewhat easy [] Hesitant [] Somewhat difficult [] Difficult
+Community Support,Attitude - Licensing,There benefits of being a licensed fisher,[ ] True [ ] False [ ] Unsure
+Community Support,Attitude - NTZ,Are there benefits to the local community from having a NTZ?,"[ ] Yes	[ ] No	[ ] No Answer"
+Community Support,Attitude - TURF,Obeying the rules of the TURF will maintain the availability of fish and other marine resources for a long time,[] Agree [] Disagree [] Do not know
+Community Support,Communication - Catch Reporting,Do fishermen talk about how to do catch reporting?,[ ] Yes [ ] No [ ] No Answer
+Community Support,Communication - Enforcement,Do you discuss with other fishermen about the importance of doing community surveillance?,[ ] Yes [ ] No [ ] No Answer
+Community Support,Communication - NTZ,"In the past 6 months, have you talked with fellow fishermen about the importance of not fishing inside the NTZ?","[ ] Yes	[ ] No	[ ] Unsure"
+Community Support,Communication - TURF,"In the past 6 months, have you talked with fellow fishermen about benefits gained from the TURF?",[] Yes [] No [] Do not remember
+Community Support,Knowledge - Catch Reporting,Do you know how to do catch monitoring?,[ ] Yes [ ] No [ ] No Answer
+Community Support,Knowledge - Enforcement,Do you know what community surveillance is?,[ ] Yes [ ] No [ ] No Answer
+Community Support,Knowledge - NTZ,Is it allowed to fish or collect shells inside the NTZ?,[ ] Yes [ ] No [ ] No Answer
+Community Support,Knowledge - TURF,Do you know the fishing regulations for the TURF?,[ ] Yes [ ] No [ ] No Answer
+Sustainable Fishing Practices,BC - Catch Reporting,"In the past 6 months, have you been reporting your catch?","[ ] Yes	[ ] No	[ ] No Answer"
+Sustainable Fishing Practices,BC - Enforcement,Do you practice community surveillance in the TURF?,[ ] Yes [ ] No [ ] No Answer
+Sustainable Fishing Practices,BC - Licensing,"In the past 6 months, which of the following options best describe your licensing status?",[ ] I do not know about licensing [ ] I am considering applying for licensing [ ] I intend to apply for licensing [ ] I have applied for licensing [ ] I have renewed my licensing
+Sustainable Fishing Practices,BC - Management Participation,"In the past 6 months, have you attended meetings and consultations about fisheries?","[ ] Yes	[ ] No	[ ] No Answer"
+Sustainable Fishing Practices,BC - NTZ Compliance,Do you respect the rules of the NTZ?,[ ] Yes [ ] No [ ] No Answer
+Sustainable Fishing Practices,BC - TURF Compliance,How often do you comply with the TURF rules?,[ ] Always [ ] Most of the times [ ] Half of the times [ ] Sometimes [ ] Never
+Sustainable Livelihoods,Catch Trend 1 Year,"Compared to 1 year ago, how has fish catch changed?",[ ] Improved heavily [ ] Improved slightly [ ] Stayed the same [ ] Deteriorated slightly [ ] Deteriorated a lot
+Sustainable Livelihoods,Catch Trend 5 Years,"Compared to 5 years ago, how has fish catch changed?",[ ] Improved heavily [ ] Improved slightly [ ] Stayed the same [ ] Deteriorated slightly [ ] Deteriorated a lot
+Sustainable Livelihoods,Collective Efficacy,My community has the ability to sustainably manage our fishery so that we can benefit from it long into the future,[ ] Strongly agree [ ] Agree [ ] Neither agree nor disagree [ ] Disagree [ ] Strongly disagree
+Sustainable Livelihoods,Food Security,Which of these statements best describes food consumed in your home in the last 12 months?,[ ] Always had enough food [ ] Sometimes did not have enough food [ ] Often did not have enough food [ ] Never had enough food
+Sustainable Livelihoods,Household Assets,Which of the following items do you have in your household? Select all that apply,[ ] Running water [ ] Electricity [ ] Refrigerator [ ] Oven [ ] Radio [ ] TV [ ] Satellite dish [ ] Computer [ ] Internet [ ] Cellular phone[ ] Landline phone
+Sustainable Livelihoods,Livelihood Stability,It is easy for myself and members of my household to find as much employment as is needed to provide for the household,"[ ] Strongly agree [ ] Agree [ ] Disagree	[ ] Strongly disagree [ ] No answer"
+Sustainable Livelihoods,Political Trust,I am confident that the Deliberative Council will make the right decisions on how to manage our fisheries,"1-10 scale of agreement with statement, 10 being best"
+Sustainable Livelihoods,Reduced Fishing Costs,What is your average fishing cost each time you go to sea?,"[] Below 500,000 Rupiah [] 500,000 - 1,000,000 Rupiah [] 1,000,000 - 1,500,000 Rupiah [] Above 1,500,000 Rupiah"
+Sustainable Livelihoods,Social Equity,My family is able to benefit from our fishery as much as any other members of the community,[ ] Strongly agree [ ] Agree [ ] Neither agree nor disagree [ ] Disagree [ ] Strongly disagree
+Sustainable Livelihoods,Social Trust,"Generally speaking, most fishers in my community can be trusted",[ ] Yes [ ] No [ ] No Answer
+Sustainable Livelihoods,Subjective Well-being,"All things considered, how satisfied are you with your life these days?","1-10 scale of agreement with statement, 10 being best"

@@ -1,0 +1,23 @@
+Survey,Indicator,Brazil n Intervention,Indonesia n Intervention,Philippines n Control,Philippines n Intervention
+CS,Attitude,6,13,0,13
+CS,Communication,3,13,0,12
+CS,Knowledge,6,13,0,13
+SFP,Catch Reporting,3,12,0,13
+SFP,Enforcement,1,12,0,0
+SFP,Licensing,0,1,0,13
+SFP,Management Participation,6,13,0,13
+SFP,NTZ Compliance,1,12,0,12
+SFP,TURF Compliance,4,13,0,14
+SE,Biomass Inside NTZ,0,8,3,19
+SE,Biomass Outside NTZ,0,10,3,19
+SL,Catch Trend 1 Year,0,13,0,0
+SL,Catch Trend 5 Years,0,4,0,0
+SL,Collective Efficacy,6,0,3,5
+SL,Food Security,4,4,3,14
+SL,Household Assets,6,4,0,0
+SL,Livelihood Stability,6,4,3,14
+SL,Political Trust,6,4,3,14
+SL,Reduced Fishing Costs,0,12,0,0
+SL,Social Equity,5,0,3,14
+SL,Social Trust,6,4,3,14
+SL,Subjective Well-being,6,4,3,14

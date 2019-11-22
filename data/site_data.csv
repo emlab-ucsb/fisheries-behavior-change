@@ -1,0 +1,44 @@
+country,site,site_name,lat,lon,site_type,fishers_ff_target_communities,area_current_turfs_ha,area_current_reserves_ha
+Philippines,AYUNGON,Ayungon,9.889341,123.148794,Intervention,1023.0,515,84
+Philippines,BINDOY_,Bindoy,9.79546,123.167514,Intervention,152.0,9787,379
+Philippines,CANTILA,Cantilan,9.395897466,126.039732,Intervention,309.0,2843,53
+Philippines,CORTES_,Cortes,9.278784027,126.2023223,Intervention,3066.0,56143,209
+Philippines,CULASI_,Culasi,11.54001091,122.0213627,Intervention,174.0,1545,36
+Philippines,DAPACOR,Dapa,9.694235,126.076554,Intervention,16.0,1901,152
+Philippines,DCARMEN,Del Carmen,9.900423,125.884516,Intervention,1600.0,2847,38
+Philippines,GUBATRA,Gubat,12.97170026,124.1637185,Intervention,398.0,5034,64
+Philippines,INABANG,Inabanga,10.07246957,124.0043671,Intervention,2253.0,NA,100
+Philippines,IPILBUL,Ipil,7.683533,122.541759,Intervention,389.0,20196,323
+Philippines,LIBERTA,Libertad,11.755149,121.862543,Intervention,319.0,13599,15
+Philippines,LOOCBAH,Looc,13.719266,120.275967,Intervention,183.0,1103,41
+Philippines,LUBANG_,Lubang,13.844841,120.190138,Intervention,385.0,1082,268
+Philippines,MANJUYO,Manjuyod,9.704605,123.160485,Intervention,375.0,2121,6
+Philippines,MASINLO,Masinloc,15.524268,119.899502,Intervention,549.0,757,128
+Philippines,MERCEDE,Mercedes,14.033433,123.098193,Intervention,150.0,6564,50
+Philippines,SAGNAY_,Sagnay,13.58877231,123.5670023,Intervention,131.0,11846,457
+Philippines,SCARLOS,San Carlos City,10.437278,123.43619,Intervention,538.0,3545,69
+Philippines,TAYASAN,Tayasan,9.930665,123.17953,Intervention,447.0,2121,6
+Philippines,TINAMBA,Tinambac,13.99002943,123.4160023,Intervention,798.0,7749,191
+Indonesia,ANAMBAS,Anambas Marine Reserve,3.180518095,106.3020812,Intervention,40.0,780.26,85.26
+Indonesia,BANDAMP,Laut Banda,-4.440190981,129.9234617,Intervention,192.0,1432.3835286859999,82
+Indonesia,BUNAKEN,Bunaken,1.33988741,124.5594294,Intervention,120.0,274.34,61.02
+Indonesia,GILIMAT,Gili Matra (Gili Meno),-8.339985771,116.0504496,Intervention,28.0,49.932,10.78
+Indonesia,KAIMANA,Kaimana,-4.111130829,133.0731782,Intervention,34.0,30143,1988
+Indonesia,KARIMUN,Karimunjawa,-5.825400524,110.1856129,Intervention,182.0,619.648361273,176.093366211
+Indonesia,KOLONOB,Kolono,-4.40868551,122.7753716,Intervention,309.0,1264.0818504,49.8957524165
+Indonesia,MAYALIB,Teluk Mayalibit Bay,-0.40011204,130.9888093,Intervention,510.0,34272,15680
+Indonesia,SABANG_,Kota Sabang,5.868856529,95.35664899,Intervention,27.0,97.4532424673,3.03113585823
+Indonesia,SERIBU_,Kepulauan Seribu,-5.637171463,106.5812102,Intervention,210.0,856,0
+Indonesia,TAKABON,Taka Bonerate,-6.56800147,120.9385342,Intervention,99.0,640,3445
+Indonesia,WAKA_DT,Liya,-5.386245929,123.6384305,Intervention,262.0,720,19.24
+Indonesia,WAKA_NP,Wakatobi National Park,-5.527169104,123.4289585,Intervention,262.0,9292,1014
+Indonesia,BUMBANG,Lombok Tengah (Bumbang Bay),-8.9104,116.3422,Intervention,473.0,258.02,128.625168839
+Brazil,CURURUP,Cururupu,-1.551041,-44.819636,Intervention,65.0,27000,1370
+Brazil,PARNAIB,Delta do Parnaiba,-2.776525,-41.937047,Intervention,300.0,5500,10
+Brazil,PCVERDE,Prainha do Canto Verde,-4.204488,-37.834881,Intervention,250.0,29805,0
+Brazil,BIGUAPE,Baia de Iguape,-12.746276,-38.893198,Intervention,180.0,700,0
+Brazil,CANAVIE,Canavieiras,-15.616323,-38.887384,Intervention,500.0,25000,0
+Brazil,PIRAJUB,Pirajubae,-27.643656,-48.54454,Intervention,25.0,770,3
+Philippines,SEBASTE,Sebaste (Culasi sustainable livelihoods and sustainable ecosystem control site),11.58,122.1,Control,NA,NA,NA
+Philippines,PRIETOD,Prieto Diaz (Gubat sustainable livelihoods and sustainable ecosystem control site),13.03,124.18,Control,NA,NA,NA
+Philippines,BAROBO_,Barobo (Dapa sustainable livelihoods and sustainable ecosystem control site),8.55,126.2,Control,NA,NA,NA

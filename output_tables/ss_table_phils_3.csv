@@ -1,0 +1,18 @@
+Survey,Indicator,MANJUYO,MASINLO,MERCEDE,SAGNAY_,SCARLOS,TAYASAN,TINAMBAC
+CS,Attitude,"251, 249","104, 94","252, 252",NA,"101, 100","307, 309",NA
+CS,Communication,"233, 248","103, 91","252, 251",NA,"99, 100","305, 307",NA
+CS,Knowledge,"219, 231","104, 94","252, 252",NA,"101, 100","306, 309",NA
+SFP,Catch Reporting,"248, 245","104, 90","252, 250",NA,"101, 100","306, 308",NA
+SFP,Licensing,"247, 243","104, 89","252, 250",NA,"98, 100","305, 307",NA
+SFP,Management Participation,"250, 249","104, 94","252, 252",NA,"101, 100","307, 309",NA
+SFP,NTZ Compliance,"247, 238","103, 85","252, 250",NA,"101, 100","304, 304",NA
+SFP,TURF Compliance,"279, 345","97, 86","231, 247",NA,"92, 100","277, 285",NA
+SE,Biomass Inside NTZ,"3, 3","3, 3","3, 3","3, 3","3, 3","2, 2","5, 5"
+SE,Biomass Outside NTZ,"3, 2","3, 2","3, 3","3, 2","2, 2","2, 2","6, 6"
+SL,Collective Efficacy,"52, 100",NA,NA,NA,NA,NA,NA
+SL,Food Security,"301, 343","102, 71; 98, 82","240, 244",NA,"96, 102; 96, 99","298, 308",NA
+SL,Livelihood Stability,"273, 346","95, 94; 90, 84","236, 249",NA,"91, 103; 80, 97","283, 306",NA
+SL,Political Trust,"295, 349","103, 94; 100, 88","248, 247",NA,"93, 101; 100, 100","302, 308",NA
+SL,Social Equity,"273, 346","101, 91; 92, 84","247, 247",NA,"86, 104; 96, 97","298, 307",NA
+SL,Social Trust,"265, 348","90, 95; 63, 85","201, 247",NA,"88, 101; 83, 97","253, 307",NA
+SL,Subjective Well-being,"300, 349","104, 94; 100, 88","249, 248",NA,"88, 103; 101, 98","305, 308",NA
