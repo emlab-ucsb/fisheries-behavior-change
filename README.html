@@ -389,8 +389,8 @@ $(document).ready(function () {
 <blockquote>
 <p><strong>Abstract:</strong> Small-scale fisheries are an important livelihood and the primary source of protein for coastal communities in many of the poorest regions in the world, yet many are currently overfished and suffer from overfishing, requiring effective and scalable management solutions. Positive ecological and socioeconomic responses to management typically lag behind immediate costs borne by fishers from fishing pressure reductions necessary for fisheries recovery. These short-term costs challenge the long-term success of these interventions. However, social marketing may increase perceptions of management benefits before ecological and socioeconomic benefits are fully realized, driving new social norms and ultimately long-term sustainable behavior change. Using ecological surveys and community-perceived measures of management support and socioeconomic condition, we assess the impact of a standardized small-scale fisheries management intervention that was implemented across 41 sites in Brazil, Indonesia, and the Philippines. The intervention combines TURF-reserves (community-based Territorial Use Rights for Fishing coupled with no-take marine reserves) with locally-tailored social marketing behavior change campaigns. Leveraging data across diverse indicators, our results suggest that communities are developing new social norms and are fishing more sustainably. This behavioral finding is critical for long term ecological and socioeconomic benefits of fisheries management that may take more time to materialize.</p>
 </blockquote>
-<div id="repo-structure" class="section level2">
-<h2>Repo structure</h2>
+<div id="repository-structure" class="section level2">
+<h2>Repository structure</h2>
 <pre><code>fisheries-behavior-change 
   |__ data
   |__ output_figures
@@ -405,13 +405,13 @@ $(document).ready(function () {
 <h2>Data</h2>
 <p>The <code>data</code> folder contains four input data files, with full metadata given below:</p>
 <ul>
-<li><code>monitoring_data.csv</code>: All monitoring data for 41 sites from the Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods impact surveys<br />
+<li><code>monitoring_data.csv</code>: All monitoring data for sites from the Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods impact surveys<br />
 </li>
-<li><code>site_data.csv</code>: Descriptive demographics and statistics for each of 41 sites<br />
+<li><code>site_data.csv</code>: Descriptive demographics and statistics for each site<br />
 </li>
-<li><code>survey_question_lookup.csv</code>: A lookup table that matches specific socioeconomic survey questions from each of 41 sites to specific indicators<br />
+<li><code>survey_question_lookup.csv</code>: A lookup table that matches specific socioeconomic survey questions from each site to specific indicators<br />
 </li>
-<li><code>matching_data.csv</code>: Coarse matching scores used for control site selection for the 3 sets of matched impact / control sites for the Philippines sustainable ecosystems and sustainable livelihoods survey</li>
+<li><code>phils_matching_data.csv</code>: Site attribute scores used for control site selection for the 3 sets of matched impact / control sites for the Philippines sustainable ecosystems and sustainable livelihoods survey</li>
 </ul>
 <div id="monitoring_data.csv" class="section level3">
 <h3><code>monitoring_data.csv</code></h3>
@@ -420,7 +420,7 @@ $(document).ready(function () {
 <li><code>country</code>: Country (Brazil, Indonesia, or Philippines)<br />
 </li>
 <li><code>site</code>: 6-letter site code</li>
-<li><code>survey</code>: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods)<br />
+<li><code>survey</code>: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystem, or Sustainable Livelihoods)<br />
 </li>
 <li><code>before_after</code>: Binary for before (0) or after (1) the intervention<br />
 </li>
@@ -456,7 +456,7 @@ $(document).ready(function () {
 <li><code>country</code>: Country (Brazil, Indonesia, or Philippines)<br />
 </li>
 <li><code>site_code</code>: 6-letter site code</li>
-<li><code>survey</code>: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods)<br />
+<li><code>survey</code>: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystem, or Sustainable Livelihoods)<br />
 </li>
 <li><code>indicator_full</code>: Full indicator name, breaking community support and sustainable fishing practices indicators out across 6 different behavior changes (Licensing; Catch Reporting; Enforcement; NTZ Compliance; TURF Compliance; Management Participation)<br />
 </li>
@@ -468,17 +468,19 @@ $(document).ready(function () {
 <li><code>response_options</code>Full survey response options, as presented to the survey participant</li>
 </ul>
 </div>
-<div id="matching_data.csv" class="section level3">
-<h3><code>matching_data.csv</code></h3>
-<p>Each row contains the coarse matching score used for control site selectio from 1 of 3 sets of matched impact / control sites for the Philippines sustainable ecosystems and sustainable livelihoods survey, with the following schema:</p>
+<div id="phils_matching_data.csv" class="section level3">
+<h3><code>phils_matching_data.csv</code></h3>
+<p>Each row contains the attribute score used for base characteristics used during the control site selection for the Philippines sustainable ecosystems and sustainable livelihoods survey, with the following schema:</p>
 <ul>
-<li><code>country</code>: Country (Brazil, Indonesia, or Philippines)<br />
-</li>
 <li><code>site</code>: 6-letter site code</li>
-<li><code>survey</code>: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods)<br />
-</li>
 <li><code>control_impact</code>: Binary for control (0) or impact (1) site</li>
-<li><code>matching_score</code>: Coarse matching score</li>
+<li><code>country</code>: Country (Philippines)<br />
+</li>
+<li><code>survey</code>: Survey (Sustainable Ecosystem or Sustainable Livelihoods)<br />
+</li>
+<li><code>baseline_characteristic</code>: Name of baseline characteristic<br />
+</li>
+<li><code>value</code>: Attribute score (ranked 1 to 5)</li>
 </ul>
 </div>
 </div>

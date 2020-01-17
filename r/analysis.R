@@ -27,7 +27,12 @@ library(here)
 monitoring_data <- read_csv(here::here("data/monitoring_data.csv")) %>%
   # Don't include habitat data for paper
   filter(survey != "Sustainable Habitat")
-matching_data <- read_csv(here::here("data/matching_data.csv"))
+
+matching_data <- read_csv("data/phils_matching_data.csv") %>%
+  group_by(site,control_impact,country,survey) %>%
+  summarize(matching_score = sum(value)) %>%
+  ungroup() %>%
+  mutate(control_impact = as.numeric(control_impact))
 
 site_data <- read_csv(here::here("data/site_data.csv"))
 
@@ -248,6 +253,7 @@ paper_figure <- function(indicator_filter, term_filter, file_name,fig_height,sit
   # Use cowplot to setup A and B panels
   p <- plot_grid(plot_grid(p2, p1, align = "h",rel_widths = c(1.75,1), labels = c("A", "B")),ncol=1, rel_heights = c(1, .1))
   # Save figure
+  p
   ggsave(here::here(paste0("output_figures/",file_name,".png")),p,width = 7.5,height=fig_height,device="png",dpi=300)
 }
 
@@ -256,30 +262,6 @@ paper_figure(indicator_filter = expr(TRUE),
              term_filter = expr(term == "before_after" ),
              file_name = "figure_3_before_after",
              fig_height = 10,
-             site_models_fig = site_models,
-             pw_models_fig = country_precision_weighted_estimates)
-
-# Make before-after figure  - All surveys
-paper_figure(indicator_filter = expr(TRUE),
-             term_filter = expr(term == "before_after" & country == "Indonesia"),
-             file_name = "figure_3_before_after_indo",
-             fig_height = 10,
-             site_models_fig = site_models,
-             pw_models_fig = country_precision_weighted_estimates)
-
-# Make before-after figure  - Just community support and behavior change
-paper_figure(indicator_filter = expr(TRUE),
-             term_filter = expr(term == "before_after" & survey %in% c("Community Support","Sustainable Fishing Practices")),
-             file_name = "figure_3_before_after_cs_fsp",
-             fig_height = 7,
-             site_models_fig = site_models,
-             pw_models_fig = country_precision_weighted_estimates)
-
-# Make before-after figure  - Just sustainable ecosystems and livelihoods
-paper_figure(indicator_filter = expr(TRUE),
-             term_filter = expr(term == "before_after" & survey %in% c("Sustainable Ecosystem","Sustainable Livelihoods")),
-             file_name = "figure_3_before_after_se_sl",
-             fig_height = 7,
              site_models_fig = site_models,
              pw_models_fig = country_precision_weighted_estimates)
 

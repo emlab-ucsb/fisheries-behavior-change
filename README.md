@@ -26,10 +26,10 @@ This analysis was performed in R. The script for fully reproducing the paper ana
 
 The `data` folder contains four input data files, with full metadata given below:  
 
-* `monitoring_data.csv`: All monitoring data for 41 sites from the Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods impact surveys   
-* `site_data.csv`: Descriptive demographics and statistics for each of 41 sites  
-* `survey_question_lookup.csv`: A lookup table that matches specific socioeconomic survey questions from each of 41 sites to specific indicators     
-* `matching_data.csv`: Coarse matching scores used for control site selection for the 3 sets of matched impact / control sites for the Philippines sustainable ecosystems and sustainable livelihoods survey  
+* `monitoring_data.csv`: All monitoring data for sites from the Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods impact surveys   
+* `site_data.csv`: Descriptive demographics and statistics for each site  
+* `survey_question_lookup.csv`: A lookup table that matches specific socioeconomic survey questions from each site to specific indicators     
+* `phils_matching_data.csv`: Site attribute scores used for control site selection for the 3 sets of matched impact / control sites for the Philippines sustainable ecosystems and sustainable livelihoods survey  
 
 ### `monitoring_data.csv`
 
@@ -37,7 +37,7 @@ Each row contains an individual monitoring observation, with the following schem
 
 * `country`: Country (Brazil, Indonesia, or Philippines)  
 * `site`: 6-letter site code 
-* `survey`: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods)  
+* `survey`: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystem, or Sustainable Livelihoods)  
 * `before_after`: Binary for before (0) or after (1) the intervention  
 * `control_impact`: Binary for control (0) or impact (1) site 
 * `replicate`: Replicate for analysis (anonymized indivudal for Community Support, Sustainable Fishing Practices, and Sustainable Livelihoods surveys, and dive site location for Sustainable Ecosystems surveys)  
@@ -64,22 +64,23 @@ Each row contains the exact survey question that was asked at a particular site,
 
 * `country`: Country (Brazil, Indonesia, or Philippines)  
 * `site_code`: 6-letter site code 
-* `survey`: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods)  
+* `survey`: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystem, or Sustainable Livelihoods)  
 * `indicator_full`: Full indicator name, breaking community support and sustainable fishing practices indicators out across 6 different behavior changes (Licensing; Catch Reporting; Enforcement; NTZ Compliance; TURF Compliance; Management Participation)  
 * `indicator_condensed`: Condensed indicator name, aggregating together community support and sustainable fishing practices indicators across 6 different behavior changes 
 * `full_question`: Full survey question, as presented to the survey participant   
 * `survey_question_code`: Cleaned version of `full_question` that removes spaces, capital letters, and special characters  
 * `response_options`Full survey response options, as presented to the survey participant  
 
-### `matching_data.csv`
+### `phils_matching_data.csv`
 
-Each row contains the coarse matching score used for control site selectio from 1 of 3 sets of matched impact / control sites for the Philippines sustainable ecosystems and sustainable livelihoods survey, with the following schema:
+Each row contains the attribute score used for base characteristics used during the control site selection for the Philippines sustainable ecosystems and sustainable livelihoods survey, with the following schema:
 
-* `country`: Country (Brazil, Indonesia, or Philippines)  
 * `site`: 6-letter site code 
-* `survey`: Survey (Community Support, Sustainable Fishing Practices, Sustainable Ecosystems, or Sustainable Livelihoods)  
 * `control_impact`: Binary for control (0) or impact (1) site 
-* `matching_score`: Coarse matching score  
+* `country`: Country (Philippines)  
+* `survey`: Survey (Sustainable Ecosystem or Sustainable Livelihoods)  
+* `baseline_characteristic`: Name of baseline characteristic  
+* `value`: Attribute score (ranked 1 to 5)  
 
 ## License
 
