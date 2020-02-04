@@ -1,6 +1,8 @@
 # fisheries-behavior-change
 This repository contains the code and data for reproducing McDonald, *et al.* 2019 (Conservation Biology): "Catalyzing sustainable fisheries management though behavior change interventions" (https://doi.org/10.1111/cobi.13475).
 
+The DOI for this code and data repository is managed through Zenodo with DOI number 10.5281/zenodo.3635980 (https://doi.org/10.5281/zenodo.3635980).
+
 > **Title**: Catalyzing sustainable fisheries management though behavior change interventions
 
 > **Authors**: Gavin McDonald, Molly Wilson, Diogo Veríssimo, Rebecca Twohey, Michaela Clemence, Dean Apistar, Stephen Box, Paul Butler, Fel Cesar Cadiz, Stuart J. Campbell, Courtney Cox, Micah Effron, Steve Gaines, Raymond Jakub, Roquelito H. Mancao, Pablo T. Rojas, Rocky Sanchez Tirona, Gabriel Vianna
