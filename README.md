@@ -1,5 +1,5 @@
 # fisheries-behavior-change
-This repository contains the code and data for reproducing McDonald, *et al.* 2019 (Conservation Biology): "Catalyzing sustainable fisheries management though behavior change interventions" (https://doi.org/10.1111/cobi.13475).
+This repository contains the code and data for reproducing McDonald, *et al.* 2019 (Conservation Biology): "Catalyzing sustainable fisheries management through behavior change interventions" (https://doi.org/10.1111/cobi.13475).
 
 The DOI for this code and data repository is managed through Zenodo with DOI number 10.5281/zenodo.3635980 (https://doi.org/10.5281/zenodo.3635980).
 
