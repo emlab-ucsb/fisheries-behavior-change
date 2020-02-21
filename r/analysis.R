@@ -150,12 +150,12 @@ country_precision_weighted_estimates <- site_models %>%
 
 palPositive<- setNames(c("forestgreen","darkorchid","white",
                          "forestgreen","darkorchid","white"),
-                       c("Positive\n(p-value < 0.05)",
-                         "Negative\n(p-value < 0.05)",
-                         "Not Significant\n(p-value >= 0.05)",
-                         "Positive\n(95% C.I. range is entirely positive)",
-                         "Negative\n(95% C.I. range is entirely negative)",
-                         "Not Significant\n(95% C.I. range overlaps 0)"))
+                       c(expression(paste0('Positive\n(',italic("p value"),' < 0.05)')),
+                         expression(paste0('Negative\n(',italic("p value"),' < 0.05)')),
+                         expression(paste0('Not significant\n(',italic("p value"),' >= 0.05)')),
+                         "Positive\n(95% CI range is entirely positive)",
+                         "Negative\n(95% CI range is entirely negative)",
+                         "Not Significant\n(95% CI range overlaps 0)"))
 palSignif <- setNames(c(0.1,1),c("No","Yes"))
 
 # Custom function to make paper figures
@@ -201,9 +201,9 @@ paper_figure <- function(indicator_filter, term_filter, file_name,fig_height,sit
   # Panel B
   
   p1 <- temp_df_weighted %>%
-    mutate(Change = case_when(conf.low.95 < 0 & conf.high.95 > 0 ~ "Not Significant\n(95% C.I. range overlaps 0)",
-                              weighted_estimate > 0 ~ "Positive\n(95% C.I. range is entirely positive)",
-                              TRUE ~ "Negative\n(95% C.I. range is entirely negative)")) %>%
+    mutate(Change = case_when(conf.low.95 < 0 & conf.high.95 > 0 ~ "Not Significant\n(95% CI range overlaps 0)",
+                              weighted_estimate > 0 ~ "Positive\n(95% CI range is entirely positive)",
+                              TRUE ~ "Negative\n(95% CI range is entirely negative)")) %>%
     ggplot(aes(x = indicator, y = weighted_estimate, fill = `Change`)) +
     geom_hline(yintercept = 0) +
     geom_errorbar(aes(ymin = conf.low.95,
@@ -232,26 +232,31 @@ paper_figure <- function(indicator_filter, term_filter, file_name,fig_height,sit
   # Panel A
   
   p2 <- temp_df_site %>%
-    mutate(Change = case_when(p.value >= 0.05 | is.na(p.value) ~ "Not Significant\n(p-value >= 0.05)",
-                              estimate > 0 ~ "Positive\n(p-value < 0.05)",
-                              TRUE ~ "Negative\n(p-value < 0.05)")) %>%
+    mutate(Change = case_when(p.value >= 0.05 | is.na(p.value) ~ "Not significant",
+                              estimate > 0 ~ "Positive",
+                              TRUE ~ "Negative"),
+           Change = fct_relevel(Change,"Negative","Not significant")) %>%
     ggplot(aes(x = estimate, y = indicator)) +
     geom_vline(xintercept = 0) +
     geom_jitter(height = 0.2,aes(fill = `Change`), colour="black",shape =21,size=3) +
     ylab("") +
     xlim(x_range) +
     xlab("Effect Size") +
-    scale_fill_manual(values = palPositive) +
+    scale_fill_manual(values = c("darkorchid","white","forestgreen"),
+                      labels = c(expression(paste('Negative (',italic("p"),' value < 0.05)')),
+                                 expression(paste('Not significant (',italic("p"),' value >= 0.05)')),
+                                 expression(paste('Positive (',italic("p"),' value < 0.05)')))) +
     theme_bw(base_size = 12) +
     facet_grid(survey~country,scales="free", space="free_y",switch="y") +
     theme(legend.direction = "vertical", 
           legend.position = "bottom",
           legend.box = "horizontal",
-          strip.background=element_rect(fill="white")) + 
+          strip.background=element_rect(fill="white"),
+          legend.text.align = 0) + 
     guides(alpha = guide_legend(override.aes = list(fill = "black")))
   
   # Use cowplot to setup A and B panels
-  p <- plot_grid(plot_grid(p2, p1, align = "h",rel_widths = c(1.75,1), labels = c("A", "B")),ncol=1, rel_heights = c(1, .1))
+  p <- plot_grid(plot_grid(p2, p1, align = "h",rel_widths = c(1.75,1), labels = c("a", "b")),ncol=1, rel_heights = c(1, .1))
   # Save figure
   p
   ggsave(here::here(paste0("output_figures/",file_name,".png")),p,width = 7.5,height=fig_height,device="png",dpi=300)
@@ -647,9 +652,9 @@ philippines_map <- base_map +
   guides(color = FALSE,shape=FALSE)
 
 # Put all maps together
-combined_map <- plot_grid(plot_grid(world_map,labels = "A"),
-                          plot_grid(brazil_map, philippines_map, labels = c("B", "C"), rel_widths = c(0.65,0.35)),
-                          plot_grid(indonesia_map, get_legend(base_map), labels = c("D", ""), rel_widths = c(0.65,0.35)),
+combined_map <- plot_grid(plot_grid(world_map,labels = "a"),
+                          plot_grid(brazil_map, philippines_map, labels = c("b", "c"), rel_widths = c(0.65,0.35)),
+                          plot_grid(indonesia_map, get_legend(base_map), labels = c("d", ""), rel_widths = c(0.65,0.35)),
                           ncol=1,
                           rel_heights = c(1,0.8,0.5))
 
