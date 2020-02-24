@@ -260,7 +260,7 @@ paper_figure <- function(indicator_filter, term_filter, file_name,fig_height,sit
   p <- plot_grid(plot_grid(p2, p1, align = "h",rel_widths = c(1.75,1), labels = c("a", "b")),ncol=1, rel_heights = c(1, .1))
   # Save figure
   p
-  ggsave(here::here(paste0("output_figures/",file_name,".pdf")),p,width = 7.5,height=fig_height,device="pdf",dpi=300)
+  ggsave(here::here(paste0("output_figures/",file_name,".pdf")),p,width = 7.5,height=fig_height,device="pdf",dpi=600)
 }
 
 # Make before-after figure  - All surveys
@@ -302,7 +302,7 @@ site_summary_fig <- site_data %>%
   theme(strip.placement = "outside",
         strip.background = element_rect(fill=NA))
 
-ggsave(here::here("output_figures/figure_s1_site_summary.pdf"),site_summary_fig,width = 7.5,height=7.5,device="pdf",dpi=300)
+ggsave(here::here("output_figures/figure_s1_site_summary.pdf"),site_summary_fig,width = 7.5,height=7.5,device="pdf",dpi=600)
 
 ################################################################################
 ## Tables
@@ -659,4 +659,4 @@ combined_map <- plot_grid(plot_grid(world_map,labels = "a"),
                           ncol=1,
                           rel_heights = c(1,0.8,0.5))
 
-ggsave(paste0(here::here("output_figures/figure_1_map.pdf")),combined_map,width = 7.5,height=7.5,device="pdf",dpi=300)
+ggsave(paste0(here::here("output_figures/figure_1_map.pdf")),combined_map,width = 7.5,height=7.5,device="pdf",dpi=600)
