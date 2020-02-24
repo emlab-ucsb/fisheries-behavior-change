@@ -150,12 +150,9 @@ country_precision_weighted_estimates <- site_models %>%
 
 palPositive<- setNames(c("forestgreen","darkorchid","white",
                          "forestgreen","darkorchid","white"),
-                       c(expression(paste0('Positive\n(',italic("p value"),' < 0.05)')),
-                         expression(paste0('Negative\n(',italic("p value"),' < 0.05)')),
-                         expression(paste0('Not significant\n(',italic("p value"),' >= 0.05)')),
-                         "Positive\n(95% CI range is entirely positive)",
-                         "Negative\n(95% CI range is entirely negative)",
-                         "Not Significant\n(95% CI range overlaps 0)"))
+                       c("Positive (95% CI is positive)",
+                         "Negative (95% CI is negative)",
+                         "Not Significant (95% CI overlaps 0)"))
 palSignif <- setNames(c(0.1,1),c("No","Yes"))
 
 # Custom function to make paper figures
@@ -201,10 +198,11 @@ paper_figure <- function(indicator_filter, term_filter, file_name,fig_height,sit
   # Panel B
   
   p1 <- temp_df_weighted %>%
-    mutate(Change = case_when(conf.low.95 < 0 & conf.high.95 > 0 ~ "Not Significant\n(95% CI range overlaps 0)",
-                              weighted_estimate > 0 ~ "Positive\n(95% CI range is entirely positive)",
-                              TRUE ~ "Negative\n(95% CI range is entirely negative)")) %>%
-    ggplot(aes(x = indicator, y = weighted_estimate, fill = `Change`)) +
+    mutate(Change = case_when(conf.low.95 < 0 & conf.high.95 > 0 ~ "Not significant",
+                              weighted_estimate > 0 ~ "Positive",
+                              TRUE ~ "Negative"),
+           Change = fct_relevel(Change,"Negative","Not significant")) %>%
+    ggplot(aes(x = indicator, y = weighted_estimate, fill = Change)) +
     geom_hline(yintercept = 0) +
     geom_errorbar(aes(ymin = conf.low.95,
                       ymax = conf.high.95),
@@ -214,7 +212,10 @@ paper_figure <- function(indicator_filter, term_filter, file_name,fig_height,sit
     xlab("") +
     ylim(x_range) +
     ylab("Effect Size") +
-    scale_fill_manual(values = palPositive) +
+    scale_fill_manual(values = c("darkorchid","white","forestgreen"),
+                      labels = c("Negative (95% CI is negative)",
+                                 "Not Significant (95% CI overlaps 0)",
+                                 "Positive (95% CI is positive)")) +
     theme_bw(base_size = 12) +
     facet_grid(survey~country,scales="free", space="free_y",switch="y") +
     theme(axis.text.y = element_blank(),
@@ -259,7 +260,7 @@ paper_figure <- function(indicator_filter, term_filter, file_name,fig_height,sit
   p <- plot_grid(plot_grid(p2, p1, align = "h",rel_widths = c(1.75,1), labels = c("a", "b")),ncol=1, rel_heights = c(1, .1))
   # Save figure
   p
-  ggsave(here::here(paste0("output_figures/",file_name,".png")),p,width = 7.5,height=fig_height,device="png",dpi=300)
+  ggsave(here::here(paste0("output_figures/",file_name,".tiff")),p,width = 7.5,height=fig_height,device="tiff",dpi=300)
 }
 
 # Make before-after figure  - All surveys
@@ -301,7 +302,7 @@ site_summary_fig <- site_data %>%
   theme(strip.placement = "outside",
         strip.background = element_rect(fill=NA))
 
-ggsave(here::here("output_figures/figure_s1_site_summary.png"),site_summary_fig,width = 7.5,height=7.5,device="png",dpi=300)
+ggsave(here::here("output_figures/figure_s1_site_summary.tiff"),site_summary_fig,width = 7.5,height=7.5,device="tiff",dpi=300)
 
 ################################################################################
 ## Tables
@@ -658,4 +659,4 @@ combined_map <- plot_grid(plot_grid(world_map,labels = "a"),
                           ncol=1,
                           rel_heights = c(1,0.8,0.5))
 
-ggsave(paste0(here::here("output_figures/figure_1_map.png")),combined_map,width = 7.5,height=7.5,device="png",dpi=300)
+ggsave(paste0(here::here("output_figures/figure_1_map.tiff")),combined_map,width = 7.5,height=7.5,device="tiff",dpi=300)
